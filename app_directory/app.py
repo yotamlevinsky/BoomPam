@@ -151,11 +151,11 @@ def show_tables():
     pam = df.loc[st.session_state['pam']] if st.session_state['pam'] else pd.DataFrame(columns=df.columns)
     col1, col2 = st.columns(2)
     with col1:
-        st.image("Boom.png", caption="BOOM", use_container_width=True)
+        st.image("images/Boom.png", caption="BOOM", use_container_width=True)
         st.subheader("BOOM")
         st.dataframe(boom, use_container_width=True, hide_index=True)
     with col2:
-        st.image("Pam.png", caption="PAM", use_container_width=True)
+        st.image("images/Pam.png", caption="PAM", use_container_width=True)
         st.subheader("PAM")
         st.dataframe(pam, use_container_width=True, hide_index=True)
 
